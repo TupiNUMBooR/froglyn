@@ -1,0 +1,13 @@
+froglyn:
+  coords:
+    lat: ${COORDS_LAT}
+    lon: ${COORDS_LON}
+  openWeatherMap.api.key: ${OPEN_WEATHER_MAP_API_KEY}
+  telegram:
+    bot.token: ${TELEGRAM_BOT_TOKEN}
+    chat.id: ${TELEGRAM_BOT_ID}
+  checkAtStart: true
+
+spring:
+  main:
+    web-application-type: NONE

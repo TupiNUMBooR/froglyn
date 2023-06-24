@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "result": {
+    "message_id": 111,
+    "from": {
+      "id": 112,
+      "is_bot": true,
+      "first_name": "Froglyn",
+      "username": "froglyn_bot"
+    },
+    "chat": {
+      "id": 113,
+      "title": "Reports",
+      "type": "group",
+      "all_members_are_administrators": true
+    },
+    "date": 1687433971,
+    "text": "Hello World!"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "coord": {
+    "lon": 135.0727,
+    "lat": 48.4717
+  },
+  "weather": [
+    {
+      "id": 800,
+      "main": "Clear",
+      "description": "clear sky",
+      "icon": "01n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 19.89,
+    "feels_like": 20.08,
+    "temp_min": 19.89,
+    "temp_max": 19.92,
+    "pressure": 1011,
+    "humidity": 82
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 2,
+    "deg": 360
+  },
+  "clouds": {
+    "all": 0
+  },
+  "dt": 1687519320,
+  "sys": {
+    "type": 2,
+    "id": 49566,
+    "country": "RU",
+    "sunrise": 1687460291,
+    "sunset": 1687518314
+  },
+  "timezone": 36000,
+  "id": 2022890,
+  "name": "Khabarovsk",
+  "cod": 200
+}
