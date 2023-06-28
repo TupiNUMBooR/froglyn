@@ -13,6 +13,7 @@ a simple telegram bot:
 - [x] move config to env variables
 - [x] rewrite git history
 - [x] push to GitHub
+- [x] start as a remote service
 - [ ] write basic spring config
 - [ ] add main test
 - [ ] add mocked tests for separate services
