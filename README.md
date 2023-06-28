@@ -12,7 +12,7 @@ a simple telegram bot:
 - [x] write main froglyn service
 - [x] move config to env variables
 - [x] rewrite git history
-- [ ] push to GitHub
+- [x] push to GitHub
 - [ ] write basic spring config
 - [ ] add main test
 - [ ] add mocked tests for separate services
