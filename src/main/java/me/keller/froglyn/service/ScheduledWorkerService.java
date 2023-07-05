@@ -22,7 +22,6 @@ public class ScheduledWorkerService {
     //℃ or °C?
 
     private static final Range<Double> GOOD_TEMP = Range.between(15d, 30d);
-    private static final boolean SEND_IF_NOT_WARN = true;
 
     private final WeatherService weatherService;
     private final TelegramService telegramService;
@@ -35,7 +34,7 @@ public class ScheduledWorkerService {
         }
     }
 
-    @Scheduled(cron = "* 7 * * * *")
+    @Scheduled(cron = "0 7 * * * *")
     public void checkWeatherAndSend() {
         WeatherResponseDto dto = weatherService.getCurrentWeather(config.getLat(), config.getLon());
 
@@ -43,7 +42,7 @@ public class ScheduledWorkerService {
         double feelsTemp = dto.getMain().getFeels_like();
         boolean warn = Stream.of(temp, feelsTemp)
             .anyMatch(Predicate.not(GOOD_TEMP::contains));
-        boolean send = SEND_IF_NOT_WARN || warn;
+        boolean send = warn || config.isSendIfNotWarn();
         log.debug(format("temp %,.2f (feels %,.2f), warn %b, send %b", temp, feelsTemp, warn, send));
 
         if (!send) return;

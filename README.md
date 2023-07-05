@@ -16,7 +16,7 @@ a simple telegram bot:
 - [x] start as a remote service
 - [x] write basic spring config
 - [x] add main test
-- [ ] add mocked tests for separate services
+- [x] add mocked tests for separate services
 - [ ] add logging of requests
 - [x] deploy
 - [ ] handle http statuses in rest template
