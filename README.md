@@ -14,10 +14,10 @@ a simple telegram bot:
 - [x] rewrite git history
 - [x] push to GitHub
 - [x] start as a remote service
-- [ ] write basic spring config
-- [ ] add main test
+- [x] write basic spring config
+- [x] add main test
 - [ ] add mocked tests for separate services
 - [ ] add logging of requests
-- [ ] deploy
+- [x] deploy
 - [ ] handle http statuses in rest template
 - [ ] add test coverage check
