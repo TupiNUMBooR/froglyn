@@ -25,4 +25,7 @@ public class Config {
 
     @Value("${froglyn.checkAtStart}")
     boolean checkAtStart;
+
+    @Value("${froglyn.sendIfNotWarn}")
+    boolean sendIfNotWarn;
 }

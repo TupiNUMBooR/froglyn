@@ -7,6 +7,7 @@ froglyn:
     bot.token: ${TELEGRAM_BOT_TOKEN}
     chat.id: ${TELEGRAM_BOT_ID}
   checkAtStart: true
+  sendIfNotWarn: ${SEND_IF_NOT_WARN:false}
 
 spring:
   main:
