@@ -18,6 +18,8 @@ public class TelegramService {
     private final Config config;
 
     public void sendMessage(String message) {
+        log.info("sending message '{}' to telegram", message);
+
         URI uri = UriComponentsBuilder
             .fromHttpUrl("https://api.telegram.org")
             .path("/bot" + config.getTelegramBotToken() + "/sendMessage")

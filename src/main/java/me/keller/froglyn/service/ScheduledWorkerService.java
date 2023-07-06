@@ -36,6 +36,7 @@ public class ScheduledWorkerService {
 
     @Scheduled(cron = "0 7 * * * *")
     public void checkWeatherAndSend() {
+        log.info("scheduled run");
         WeatherResponseDto dto = weatherService.getCurrentWeather(config.getLat(), config.getLon());
 
         double temp = dto.getMain().getTemp();

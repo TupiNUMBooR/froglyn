@@ -28,8 +28,7 @@ public class WeatherService {
      */
     @SneakyThrows
     public WeatherResponseDto getCurrentWeather(double lat, double lon) {
-        log.info(format("get weather for %,.2f, %,.2f", lat, lon));
-
+        log.info(format("get current weather for %,.2f, %,.2f", lat, lon));
         URI uri = UriComponentsBuilder
             .fromHttpUrl("https://api.openweathermap.org")
             .path("/data/2.5/weather")
@@ -40,7 +39,8 @@ public class WeatherService {
             .buildAndExpand().toUri();
 
         WeatherResponseDto response = restTemplate.getForObject(uri, WeatherResponseDto.class);
-        log.debug("get weather: {}", mapper.writer().writeValueAsString(response));
+        if (log.isDebugEnabled())
+            log.debug("got current weather: {}", mapper.writer().writeValueAsString(response));
 
         return response;
     }
